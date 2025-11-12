@@ -1,0 +1,55 @@
+#how-it-works {
+  background-color: #f7f9fb;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  align-items: start;
+  justify-items: center;
+  position: relative;
+}
+
+.step-container {
+  position: relative;
+}
+
+.step-icon {
+  background: linear-gradient(135deg, #2D7FF9 0%, #2DD6A7 100%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 35px rgba(45, 152, 214, 0.25);
+}
+
+/* ✅ connector */
+.step-line {
+  position: absolute;
+  top: 35px;
+  left: calc(50% + 40px);
+  width: calc(100% - 40px);
+  height: 3px;
+  background: linear-gradient(90deg, #2D7FF9 0%, #2DD6A7 100%);
+  opacity: 0.85;
+}
+
+.how-description {
+  color: #6b7280;
+  font-size: 15px;
+  max-width: 240px;
+  line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .step-line {
+    display: none;
+  }
+}

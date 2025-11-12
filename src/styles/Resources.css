@@ -1,0 +1,109 @@
+/* ✅ Fix card layout to match screenshot */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* ✅ Section background */
+.resources-section {
+  background: #f8fafc;
+}
+
+/* ✅ Title + Subtitle */
+.resources-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.resources-subtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+/* ✅ Card Container */
+.resource-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 26px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+  transition: all 0.25s ease;
+  text-align: left;
+  height: auto;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* ✅ Icon Wrapper */
+.resource-icon {
+  background: rgba(59, 130, 246, 0.12);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-inner {
+  width: 24px;
+  height: 24px;
+  color: #2563eb;
+}
+
+/* ✅ Text Content */
+.resource-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+.resource-description {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+/* ✅ Read More Link */
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.resource-arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.25s ease;
+}
+
+.resource-card:hover .resource-arrow {
+  transform: translateX(4px);
+}
+
+
+/* ✅ Mobile responsiveness */
+@media (max-width: 1024px) {
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .resources-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

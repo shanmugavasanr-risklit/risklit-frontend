@@ -1,0 +1,50 @@
+/* ✅ Section background making the cards stand out */
+#features {
+  background-color: #f8fafc;
+}
+
+/* ✅ Card container styling */
+.feature-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 0 24px rgba(15, 23, 42, 0.05);
+  transition: all 0.25s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
+}
+
+/* ✅ Icon wrapper (soft blue background) */
+.feature-icon {
+  background: rgba(59, 130, 246, 0.12);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* ✅ Title + description styles */
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.feature-description {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.55;
+}
+
+/* ✅ Responsive gap improvement */
+.grid {
+  gap: 30px;
+}

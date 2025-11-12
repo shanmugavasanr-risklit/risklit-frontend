@@ -1,0 +1,13 @@
+.hero{
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.hero-image{
+    height: 80vh;
+    width: 100%;
+    object-fit:cover;
+    justify-content: center;
+    display: flex;
+}

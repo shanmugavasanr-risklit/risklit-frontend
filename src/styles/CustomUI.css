@@ -1,0 +1,78 @@
+/* -------- CARD -------- */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.card-header { margin-bottom: 10px; }
+.card-title { font-size: 1.25rem; font-weight: 600; margin: 0; }
+.card-description { font-size: 0.9rem; color: #666; margin: 15px 0; }
+.card-content { margin-top: 25px; }
+
+/* -------- BADGE -------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  margin: 0px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-default { background: #007bff; color: white; }
+.badge-secondary { background: #e0e0e0; color: #333; }
+.badge-destructive { background: #dc3545; color: white; }
+.badge-outline { border: 1px solid #aaa; color: #333; background: transparent; }
+.badge-success { background: #28a745; color: white; }
+.badge-warning { background: #ffc107; color: #222; }
+
+/* -------- BUTTON -------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-default { background: #007bff; color: #fff; }
+.btn-default:hover { background: #0069d9; }
+
+.btn-outline { background: transparent; border: 1px solid #ccc; color: #333; }
+.btn-outline:hover { background: #f1f1f1; }
+
+.btn-secondary { background: #e0e0e0; color: #333; }
+.btn-secondary:hover { background: #d5d5d5; }
+
+.btn-destructive { background: #dc3545; color: #fff; }
+.btn-destructive:hover { background: #c82333; }
+
+.btn-hero { background: linear-gradient(to right, #007bff, #6f42c1); color: #fff; }
+.btn-hero:hover { opacity: 0.9; }
+
+.btn-sm { padding: 6px 12px; font-size: 0.8rem; }
+.btn-default, .btn-md { padding: 8px 16px; font-size: 0.9rem; }
+.btn-lg { padding: 12px 20px; font-size: 1rem; }
+
+/* -------- PROGRESS -------- */
+.progress {
+  width: 100%;
+  height: 8px;
+  border-radius: 6px;
+  background: #eee;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background: #007bff;
+  transition: width 0.3s ease;
+}

@@ -1,0 +1,33 @@
+/* Form */
+main{
+  background-color: #e3e3e3;
+  box-shadow: 10px 0px 150px 15px rgba(2,6,23,0.04);
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+
+.form-card{
+  max-width:700px;
+  margin:1.25rem auto;
+  padding:1.25rem;
+  background: #e3e3e3;
+}
+.form-row { display:flex; gap:1rem; margin-bottom:.75rem; }
+.form-field{ flex:1; display:flex; flex-direction:column; }
+label { font-size:.85rem; color:var(--muted); margin-bottom:.25rem; }
+input[type="text"], input[type="email"] {
+  padding:1rem .75rem;
+  border:1px solid #e6eef6;
+  background: #ffffff;
+}
+button.primary {
+  background: #348ddb;
+  color:white;
+  border:none;
+  width: 10rem;
+  padding:.65rem 1rem;
+  font-weight:600;
+  cursor:pointer;
+}
+.small-muted { font-size:.8rem; color:var(--muted); margin-top:.5rem; }
+.result { margin-top:1rem; padding:.75rem; background:#0f172a10; border-radius:6px; font-family:monospace; white-space:pre-wrap; }
