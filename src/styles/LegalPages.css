@@ -1,0 +1,73 @@
+/* === Legal Page Layout === */
+.legal-page {
+  background-color: #f8fafc; /* same background tone as features section */
+  min-height: 100vh;
+  padding: 0px 0px 0px 0px; /* space for navbar + footer */
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 0 32px rgba(15, 23, 42, 0.05);
+  padding: 48px;
+}
+
+.legal-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.legal-container h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.legal-container p,
+.legal-container li {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.legal-container ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.legal-container a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.legal-container a:hover {
+  color: #1d4ed8;
+}
+
+/* Divider styling */
+.legal-container hr {
+  border: none;
+  border-top: 1px solid rgba(226, 232, 240, 0.6);
+  margin: 30px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .legal-container {
+    padding: 30px 20px;
+  }
+  .legal-container h1 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import "@/styles/Footer.css";
+import Link from "next/link";
 import { Mail, Twitter, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
@@ -39,21 +40,20 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal Column */}
-          <div>
-            <h4 className="footer-heading">Legal</h4>
-            <ul className="footer-links">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
+{/* Legal Column */}
+<div>
+  <h4 className="footer-heading">Legal</h4>
+  <ul className="footer-links">
+<li><Link href="/privacy-policy">Privacy Policy</Link></li>
+<li><Link href="/terms-of-service">Terms of Service</Link></li>
+  </ul>
+</div>
         </div>
-
         {/* Bottom row */}
         <div className="footer-bottom">
           <div className="footer-contact">
             <Mail className="footer-icon" />
-            <a href="mailto:hello@risklit.com">hello@risklit.com</a>
+            <a href="mailto:cofounder@risklit.com">cofounder@risklit.com</a>
           </div>
 
           <div className="footer-social">
