@@ -54,7 +54,7 @@ export default function Header() {
         
         {/* ✅ Logo */}
         <div className="header-logo">
-          <img src={logo.src} alt="RiskLit" className="logo-img" />
+          <a href="/"><img src={logo.src} alt="RiskLit" className="logo-img" /> </a>
         </div>
 
         {/* ✅ Navigation Links */}

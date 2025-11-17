@@ -58,7 +58,7 @@ const Footer = () => {
 
           <div className="footer-social">
             <a href="#"><Twitter className="footer-icon" /></a>
-            <a href="#"><Linkedin className="footer-icon" /></a>
+            <a href="https://www.linkedin.com/company/risklitt"><Linkedin className="footer-icon" /></a>
             <a href="#"><Github className="footer-icon" /></a>
           </div>
 
