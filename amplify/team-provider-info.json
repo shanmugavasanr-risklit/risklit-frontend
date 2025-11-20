@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-risklitfrontend-dev-5c70b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::920971363994:role/amplify-risklitfrontend-dev-5c70b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::920971363994:role/amplify-risklitfrontend-dev-5c70b-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-risklitfrontend-dev-5c70b-deployment",
+      "UnauthRoleName": "amplify-risklitfrontend-dev-5c70b-unauthRole",
+      "StackName": "amplify-risklitfrontend-dev-5c70b",
+      "StackId": "arn:aws:cloudformation:eu-north-1:920971363994:stack/amplify-risklitfrontend-dev-5c70b/7d460000-c5d9-11f0-9217-0ea66430f31d",
+      "AmplifyAppId": "d3aim9ixu7lctj"
+    },
+    "categories": {
+      "function": {
+        "freeBetaApplicationHandler": {
+          "deploymentBucketName": "amplify-risklitfrontend-dev-5c70b-deployment",
+          "s3Key": "amplify-builds/freeBetaApplicationHandler-68426c6673785a75636f-build.zip"
+        }
+      },
+      "api": {
+        "freeBetaApplicationApi": {}
+      },
+      "storage": {
+        "freeBetaApplications": {}
+      }
+    }
+  }
+}

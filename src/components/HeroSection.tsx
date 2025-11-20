@@ -72,13 +72,22 @@ const Hero = () => {
               </p>
 
               <div className="hero-buttons">
-                <button className="btn-primary" onClick={handleStartAssessment}>
-                  Start Free Scan <ArrowRight className="btn-icon" />
-                </button>
+<button
+  className="btn-primary"
+  onClick={() => {
+    const el = document.getElementById("free-reports");
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }}
+>
+  Start Scan <ArrowRight className="btn-icon" />
+</button>
 
-                <button className="btn-outline" onClick={handleViewDemo}>
+
+                <a href="mailto:cofounder@risklit.com?subject=Schedule%20a%20Demo">
+                <button className="btn-outline">
                   <Play className="btn-icon-left" /> View Demo
                 </button>
+                </a>
               </div>
 
               <p className="hero-footnote">

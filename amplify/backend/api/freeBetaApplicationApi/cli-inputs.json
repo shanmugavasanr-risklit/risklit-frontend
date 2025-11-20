@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/free-beta-application": {
+      "name": "/free-beta-application",
+      "lambdaFunction": "freeBetaApplicationHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

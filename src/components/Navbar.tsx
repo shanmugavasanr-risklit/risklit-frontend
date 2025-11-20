@@ -68,9 +68,16 @@ export default function Header() {
         {/* ✅ Action Buttons */}
         <div className="header-actions">
           <button className="btn-text">Sign In</button>
-          <button className="btn-primary" onClick={handleStartScan}>
-            Start Free Scan
-          </button>
+<button
+  className="btn-primary"
+  onClick={() => {
+    const el = document.getElementById("free-reports");
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }}
+>
+  Start Scan
+</button>
+
         </div>
 
       </div>

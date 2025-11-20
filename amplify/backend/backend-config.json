@@ -1,0 +1,50 @@
+{
+  "api": {
+    "freeBetaApplicationApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "freeBetaApplicationHandler"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "freeBetaApplicationHandler": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_freeBetaApplicationHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "freeBetaApplicationHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_freeBetaApplicationHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "freeBetaApplicationHandler"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "freeBetaApplications": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

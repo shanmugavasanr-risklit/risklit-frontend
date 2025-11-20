@@ -46,13 +46,22 @@ const CTA = () => {
           </p>
 
           <div className="cta-buttons">
-            <button className="btn-primary" onClick={handleStartScan}>
-              Start Free Scan <ArrowRight className="btn-icon" />
-            </button>
+<button
+  className="btn-primary"
+  onClick={() => {
+    const el = document.getElementById("free-reports");
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }}
+>
+  Start Scan <ArrowRight className="btn-icon" />
+</button>
 
-            <button className="btn-outline" onClick={handleScheduleDemo}>
+
+            <a href="mailto:cofounder@risklit.com?subject=Schedule%20a%20Demo">
+            <button className="btn-outline">
               Schedule a Demo
             </button>
+            </a>
           </div>
 
           <p className="cta-footnote">

@@ -1,0 +1,17 @@
+{
+  "resourceName": "freeBetaApplications",
+  "tableName": "FreeBetaApplications",
+  "partitionKey": {
+    "fieldName": "email",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": [],
+  "functionAccess": {
+  "freeBetaApplicationHandler": [
+    "create",
+    "read"
+  ]
+}
+
+}

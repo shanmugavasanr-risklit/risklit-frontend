@@ -1,0 +1,18 @@
+{
+  "whyContinueWithGen1": "Gen 2 is missing features I need from Gen 1",
+  "projectName": "risklitfrontend",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "react",
+    "config": {
+      "SourceDir": ".",
+      "DistributionDir": ".next",
+      "BuildCommand": "npm.cmd run-script build",
+      "StartCommand": "npm.cmd run-script start"
+    }
+  },
+  "providers": [
+    "awscloudformation"
+  ]
+}
