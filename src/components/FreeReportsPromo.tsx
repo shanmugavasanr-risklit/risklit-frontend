@@ -57,7 +57,7 @@ export default function FreeReportsPromo() {
     setLoading(true);
 
 const res = await fetch(
-  "https://tkz3rcgbe8.execute-api.eu-north-1.amazonaws.com/dev",
+  "https://tkz3rcgbe8.execute-api.eu-north-1.amazonaws.com/dev/free-beta-application",
   {
     method: "POST",
     body: JSON.stringify({
