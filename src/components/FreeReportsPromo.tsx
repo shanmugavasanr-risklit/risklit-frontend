@@ -56,30 +56,31 @@ export default function FreeReportsPromo() {
   const handleSubmit = async () => {
     setLoading(true);
 
-const res = await fetch(
-  "https://tkz3rcgbe8.execute-api.eu-north-1.amazonaws.com/dev/free-beta-application",
-  {
-    method: "POST",
-    body: JSON.stringify({
-      companyName,
-      businessEmail,
-      websiteUrl,
-      companyRegisteredIn,
-      customerRegions,
-      userDataTypes,
-      usesCookies,
-      dataSharedWithThirdParties: dataShared,
-      usingAI,
-      hasPrivacyPolicy,
-      hasTerms,
-      previousAudit,
-      stage,
-      industry,
-      biggestConcern,
-      wantFollowUp: followUp,
-    }),
-  }
-);
+    const res = await fetch(
+      "https://tkz3rcgbe8.execute-api.eu-north-1.amazonaws.com/dev/free-beta-application",
+
+      {
+        method: "POST",
+        body: JSON.stringify({
+          companyName,
+          businessEmail,
+          websiteUrl,
+          companyRegisteredIn,
+          customerRegions,
+          userDataTypes,
+          usesCookies,
+          dataSharedWithThirdParties: dataShared,
+          usingAI,
+          hasPrivacyPolicy,
+          hasTerms,
+          previousAudit,
+          stage,
+          industry,
+          biggestConcern,
+          wantFollowUp: followUp,
+        }),
+      }
+    );
 
 
     setLoading(false);
